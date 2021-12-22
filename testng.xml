@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ImportSuit">
+    <test verbose="2" name="D:/idea project/WebDriver-projects/07_137enviroment">
+        <classes>
+            <!--我的应用模块-->
+            <!--<class name="com.test.cases.ApplicationModelTest">
+                <methods>
+                    <include name="LoginTest"/>
+                    <include name="applicationTest"/>
+                </methods>
+            </class>-->
+
+            <!--我的服务模块-->
+            <!--<class name="com.test.cases.ServiceModuleTest">
+                <methods>
+                    <include name="LoginTest"/>
+                    <include name="addDataSourceServer"/>
+                    <include name="addAgencyService"/>
+                </methods>
+            </class>-->
+
+            <!--我的数据源模块-->
+            <!--<class name="com.test.cases.DataSourceModuleTest">
+                <methods>
+                    <include name="LoginTest"/>
+                    <include name="ChooseGeoJson"/>
+                    <include name="ChooseShapeFile"/>
+                    <include name="ChooseCsvFile"/>
+                    <include name="ChooseArcJson"/>
+                    <include name="ChooseTiff"/>
+                    <include name="ChooseTiles"/>
+                </methods>
+            </class>-->
+
+            <!--我的素材模块-->
+            <!--<class name="com.test.cases.MaterialModelTest">
+                <methods>
+                    <include name="LoginTest"/>
+                    <include name="addMaterial"/>
+                </methods>
+            </class>-->
+
+            <!--我的效果模块-->
+            <!--<class name="com.test.cases.EffectModelTest">
+                <methods>
+                    <include name="LoginTest"/>
+                    <include name="addEffect"/>
+                </methods>
+            </class>-->
+
+            <!--三维渲染版本模块-->
+            <!--<class name="com.test.cases.VersionManageTest">
+                <methods>
+                    <include name="LoginTest"/>
+                    <include name="addVersion"/>
+                </methods>
+            </class>-->
+
+            <!--SDK管理模块-->
+            <!--<class name="com.test.cases.SDKModelTest">
+                <methods>
+                    <include name="LoginTest"/>
+                    <include name="addVersion"/>
+                </methods>
+            </class>-->
+
+            <!--三维资源管理模块-->
+            <!--<class name="com.test.cases.PublicResourceModelTest">
+                <methods>
+                    <include name="LoginTest"/>
+                    <include name="addVersion"/>
+                </methods>
+            </class>-->
+
+            <!--我的账户模块-->
+            <!--<class name="com.test.cases.AccountManageModelTest">
+                <methods>
+                    <include name="LoginTest"/>
+                    <include name="addAccountTest"/>
+                    <include name="queryUser"/>
+                    <include name="addCharacter"/>
+                </methods>
+            </class>-->
+        </classes>
+
+
+    </test>
+</suite>
