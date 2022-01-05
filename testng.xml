@@ -24,12 +24,12 @@
             <!--<class name="com.test.cases.DataSourceModuleTest">
                 <methods>
                     <include name="LoginTest"/>
-                    <include name="ChooseGeoJson"/>
+                    &lt;!&ndash;<include name="ChooseGeoJson"/>&ndash;&gt;
                     <include name="ChooseShapeFile"/>
-                    <include name="ChooseCsvFile"/>
+                    &lt;!&ndash;<include name="ChooseCsvFile"/>
                     <include name="ChooseArcJson"/>
                     <include name="ChooseTiff"/>
-                    <include name="ChooseTiles"/>
+                    <include name="ChooseTiles"/>&ndash;&gt;
                 </methods>
             </class>-->
 
@@ -50,12 +50,12 @@
             </class>-->
 
             <!--三维渲染版本模块-->
-            <!--<class name="com.test.cases.VersionManageTest">
+            <class name="com.test.cases.VersionManageTest">
                 <methods>
                     <include name="LoginTest"/>
                     <include name="addVersion"/>
                 </methods>
-            </class>-->
+            </class>
 
             <!--SDK管理模块-->
             <!--<class name="com.test.cases.SDKModelTest">

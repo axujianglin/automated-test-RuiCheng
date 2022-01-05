@@ -30,7 +30,6 @@ public class BrowerProxyUtils{
     /**
      * 获取当前页面部分请求的状态码
      */
-    @Test
     public static void getStatus() throws InterruptedException {
         //初始化
         SetUp set = new SetUp();
@@ -56,7 +55,7 @@ public class BrowerProxyUtils{
             }
         });
         //进入页面
-        driver.get("https://www.baidu.com/");
+        driver.get("http://baidu.com");
         Har har = proxy.getHar();
         List<HarEntry> entries = har.getLog().getEntries();
         for (HarEntry entry : entries) {

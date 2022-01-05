@@ -54,7 +54,6 @@ public class DataSourceImportUtil {
         //编码
         Thread.sleep(2000);
         String aClass = driver.findElements(By.xpath("//div[@class='left_div']/label")).get(0).getAttribute("class");
-        System.out.println(aClass);
         if(aClass.equals("el-checkbox")){
             driver.findElements(By.xpath("//div[@class='left_div']/label/span[1]")).get(0).click();
             List<WebElement> list = getSelectValue(6, driver);
@@ -87,8 +86,8 @@ public class DataSourceImportUtil {
     public static void find(int index, WebDriver driver,List<List<String>> infoLists,int a) {
         List<WebElement> lists = getSelectValue(index,driver);
         for (WebElement list:lists) {
-            System.out.println("从下拉框中获取到的值为："+list.getText());
-            System.out.println("excel表格中的值"+infoLists.get(a).get(index-8));
+            /*System.out.println("从下拉框中获取到的值为："+list.getText());
+            System.out.println("excel表格中的值"+infoLists.get(a).get(index-8));*/
             if (infoLists.get(a).get(index-8).equals(list.getText())) {
                 list.click();
                 break;

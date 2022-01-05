@@ -116,7 +116,7 @@ public class DataSourceImportCommon {
     public  void Import6(WebDriver driver,List<List<String>> infoLists) throws InterruptedException {
         DataSourceImportUtil.Import(driver,infoLists,6);
         for(int i=9;i<20;i++){
-            if(i ==17){
+            if(i ==15){
                 continue;
             }
             DataSourceImportUtil.find(i,driver,infoLists,6);

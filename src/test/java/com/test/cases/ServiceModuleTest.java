@@ -107,6 +107,7 @@ public class ServiceModuleTest {
             }
             if(lists.get(i).get(1).equals("WMTS")){
                 driver.findElements(By.xpath("//div[@class='el-input']/input")).get(0).sendKeys("张三");
+                Thread.sleep(1000);
                 driver.findElements(By.xpath("//i[@class='el-select__caret el-input__icon el-icon-arrow-up']")).get(0).click();
                 driver.findElement(By.xpath("//div[@class='el-select-dropdown el-popper' and contains(@x-placement,'start')]/div/div/ul/li[2]")).click();
                 driver.findElements(By.xpath("//i[@class='el-select__caret el-input__icon el-icon-arrow-up']")).get(1).click();

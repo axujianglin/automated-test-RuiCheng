@@ -49,7 +49,7 @@ public class DataSourceModuleTest {
     }
 
     //确定数据格式为jeo json
-    @Test(dependsOnMethods = "LoginTest",groups = {"dataSource","jeoJson"})
+    @Test(dependsOnMethods = "LoginTest")
     public void ChooseGeoJson() throws InterruptedException, IOException {
         List<List<String>> lists;
         List<List<String>> infoLists = DataSourceImportUtil.getInfo("src/test/java/com/test/datas",
@@ -60,7 +60,7 @@ public class DataSourceModuleTest {
     }
 
     //确定数据格式为shape file
-    @Test(dependsOnMethods = "LoginTest",groups = {"dataSource","shapeFile"})
+    @Test(dependsOnMethods = "LoginTest")
     public void ChooseShapeFile() throws InterruptedException, IOException {
         List<List<String>> lists;
         List<List<String>> infoLists = DataSourceImportUtil.getInfo("src/test/java/com/test/datas",
@@ -70,7 +70,7 @@ public class DataSourceModuleTest {
         DataSourceUploadUtil.dataUploadGis(lists,driver,1,infoLists);
     }
     //确定数据类型为csv file
-    @Test(dependsOnMethods = "LoginTest",groups = {"dataSource","csvFile"})
+    @Test(dependsOnMethods = "LoginTest")
     public void ChooseCsvFile() throws InterruptedException, IOException {
         List<List<String>> lists;
         List<List<String>> infoLists = DataSourceImportUtil.getInfo("src/test/java/com/test/datas",
@@ -80,7 +80,7 @@ public class DataSourceModuleTest {
         DataSourceUploadUtil.dataUploadGis(lists,driver,2,infoLists);
     }
     //确定数据类型为arc json
-    @Test(dependsOnMethods = "LoginTest",groups = {"dataSource","arcJson"})
+    @Test(dependsOnMethods = "LoginTest")
     public void ChooseArcJson() throws InterruptedException, IOException {
         List<List<String>> lists;
         List<List<String>> infoLists = DataSourceImportUtil.getInfo("src/test/java/com/test/datas",
@@ -99,7 +99,7 @@ public class DataSourceModuleTest {
         DataSourceUploadUtil.dataUploadGis(lists,driver,4,infoLists);
     }
     //确定数据类型为3d tiles
-    @Test(dependsOnMethods = "LoginTest",groups = {"dataSource","3dTiles"})
+    @Test(dependsOnMethods = "LoginTest")
     public void ChooseTiles() throws InterruptedException, IOException {
         List<List<String>> lists;
         lists=DataSourceUploadUtil.getInfoByExcel("src/test/java/com/test/datas",

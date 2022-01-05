@@ -103,9 +103,9 @@ public class DataSourceUploadUtil {
 
 
             Thread.sleep(1000);
-            driver.findElement(By.xpath("//input[@class='vue-treeselect__input']")).sendKeys("好的");
+            /*driver.findElement(By.xpath("//input[@class='vue-treeselect__input']")).sendKeys("好的");
             driver.findElement(By.xpath("//input[@class='vue-treeselect__input']")).sendKeys(Keys.UP);
-            driver.findElement(By.xpath("//input[@class='vue-treeselect__input']")).sendKeys(Keys.ENTER);
+            driver.findElement(By.xpath("//input[@class='vue-treeselect__input']")).sendKeys(Keys.ENTER);*/
             driver.findElements(By.xpath("//input[@class='el-input__inner']")).get(1).sendKeys(firstName+lists.get(0).get(i)+"测试文件an");
             driver.findElements(By.xpath("//i[@class='el-select__caret el-input__icon el-icon-arrow-up']")).get(0).click();
             driver.findElements(By.xpath("//div[@x-placement='bottom-start']/div/div/ul/li")).get(1).click();
@@ -190,7 +190,7 @@ public class DataSourceUploadUtil {
             driver.findElements(By.xpath("//textarea")).get(1).sendKeys("张三描述");
             driver.findElement(By.xpath("//div[@class='el-form-item']/div/label/span/span")).click();
             driver.findElements(By.xpath("//span[@class='button login_btn']")).get(1).click();
-            BrowerProxyUtils.getStatus();
+
 
         }
     }

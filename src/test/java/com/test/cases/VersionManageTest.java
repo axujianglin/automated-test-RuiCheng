@@ -49,7 +49,7 @@ public class VersionManageTest {
     //新建版本
     @Test
     public void addVersion() throws InterruptedException, IOException {
-        List<List<String>> info = VersionManageUtil.getInfo("src/test/java/com/test/datas",
+        List<String> info = VersionManageUtil.getInfo("src/test/java/com/test/datas",
                 "DataSourceImport.xlsx", "Version");
         VersionManageUtil.addVersion(driver,info);
     }

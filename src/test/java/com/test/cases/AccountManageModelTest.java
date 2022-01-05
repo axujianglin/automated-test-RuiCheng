@@ -45,7 +45,7 @@ public class AccountManageModelTest {
         Login.login(driver,loginData);
         Thread.sleep(1000);
         driver.findElement(By.xpath("//i[@class='el-icon-caret-bottom']")).click();
-        driver.findElement(By.xpath("//div[@class='list']/span[8]")).click();
+        driver.findElement(By.xpath("//div[@class='list']/span[7]")).click();
     }
     //账户添加和修改
     @Test
